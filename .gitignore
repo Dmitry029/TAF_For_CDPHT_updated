@@ -7,6 +7,6 @@ test-output/
 .settings
 /bin/
 bin/
-
+debug.log
 
 

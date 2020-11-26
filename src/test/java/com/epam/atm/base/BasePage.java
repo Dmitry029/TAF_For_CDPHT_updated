@@ -71,6 +71,13 @@ public class BasePage {
         driver.switchTo().frame(element);
     }
 
+    /**
+     * Switch to top
+     */
+    protected void switchToTop() {
+        driver.switchTo().defaultContent();
+    }
+
 
     private void waitFor(ExpectedCondition<WebElement> condition, Integer timeOutInSeconds) {
         timeOutInSeconds = timeOutInSeconds != null ? timeOutInSeconds : 30;
