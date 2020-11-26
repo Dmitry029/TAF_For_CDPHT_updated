@@ -29,4 +29,6 @@ public class MainPage extends BasePage {
         searchArea.sendKeys(text);
         return new SearchPopup(driver, log);
     }
+
+
 }

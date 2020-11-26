@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="OnlinerTestSuite" verbose="3" parallel="tests" thread-count="4">
+
+    <test name="SearchPopupTest-CH">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.epam.atm.tests.SearchPopupTest"/>
+        </classes>
+    </test>
+
+    <test name="AlertTest-CH">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.epam.atm.tests.AlertTest"/>
+        </classes>
+    </test>
+
+    <test name="FacebookConnectionTest-CH">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.epam.atm.tests.FacebookConnectionTest"/>
+        </classes>
+    </test>
+
+</suite>

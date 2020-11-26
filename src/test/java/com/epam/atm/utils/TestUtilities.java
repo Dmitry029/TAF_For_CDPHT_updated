@@ -11,14 +11,6 @@ import java.util.Date;
 
 public class TestUtilities extends BaseTest {
 
-    public void sleep (long millis){
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
     /** Take screenshot */
     protected void takeScreenshot(String fileName) {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

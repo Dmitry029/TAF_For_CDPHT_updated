@@ -42,4 +42,11 @@ public class SearchPopup extends BasePage {
     public boolean isPopUpClosed() {
         return searchPage.size() > 0 && searchPage.get(0).isDisplayed();
     }
+
+    public DescriptionPage selectSearchResultByNumber(int number) {
+        switchToFrame(searchFrame);
+        searchResults.get(number - 1).click();
+        switchToTop();
+        return new DescriptionPage(driver, log);
+    }
 }
