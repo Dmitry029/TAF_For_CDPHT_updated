@@ -29,6 +29,7 @@ public class SearchPopup extends BasePage {
 
     public boolean ifAllResultsContainText(String text) {
         switchToFrame(searchFrame);
+        log.info("*** Search popup is opened");
         return searchResults
                 .stream().map(WebElement::getText)
                 .allMatch(element -> element.contains(text));
@@ -37,6 +38,7 @@ public class SearchPopup extends BasePage {
     public void closePopup() {
         closeSearch.click();
         switchToTop();
+        log.info("*** Search popup is closed");
     }
 
     public boolean isPopUpClosed() {

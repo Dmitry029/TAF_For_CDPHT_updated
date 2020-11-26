@@ -26,10 +26,13 @@ public class AlertTest extends TestUtilities {
     }
 
     @Test(priority = 2)
-    public void verifyPopupIsClosed() {
+    public void verifyAlertStatus() {
         AlertWithTip alertWithTip = new AlertWithTip(driver, log);
         assertTrue(alertWithTip.isAlertWithTipDisplayed());
+        alertWithTip.scrollToBottom();
+        takeScreenshot("visibleAlert");
         alertWithTip.closeAlert();
+        takeScreenshot("invisibleAlert");
         assertFalse(alertWithTip.isAlertWithTipDisplayed());
     }
 }

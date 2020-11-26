@@ -11,9 +11,10 @@ public class DescriptionPage extends BasePage {
         super(driver, log);
     }
 
-    public AlertWithTip openProductTip(String text){
+    public AlertWithTip openProductTip(String text) {
         String locator = String.format("//td[contains(text(),'%s')]/div/span", text);
         driver.findElement(By.xpath(locator)).click();
+        log.info("*** Product tip is opened");
         return new AlertWithTip(driver, log);
     }
 }

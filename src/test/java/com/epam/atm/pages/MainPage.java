@@ -21,7 +21,7 @@ public class MainPage extends BasePage {
     public MainPage openPage() {
         log.info("*** Open page: " + pageUrl);
         openUrl(pageUrl);
-        log.info("*** Page opened.");
+        log.info("*** Main page is opened");
         return this;
     }
 

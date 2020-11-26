@@ -21,7 +21,7 @@ public class BaseTest {
 
     protected String testSuiteName;
     protected String testName;
-    protected String testMethodName;
+
 
     @Parameters({"browser"})
     @BeforeTest(alwaysRun = true)
@@ -32,13 +32,13 @@ public class BaseTest {
         log = getLogger(testName);
 
         BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-        driver = factory.createDriver();
+        driver = factory.getDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         this.testSuiteName = ctx.getSuite().getName();
         this.testName = testName;
-      }
+    }
 
     @AfterTest(alwaysRun = true)
     public void tearDown() {

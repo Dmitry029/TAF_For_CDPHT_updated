@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Set;
-
 public class Footer extends BasePage {
 
     @FindBy(css = "[class*=button_fb]")
@@ -20,6 +18,7 @@ public class Footer extends BasePage {
 
     public void switchToFacebook() {
         facebookLink.click();
+        log.info("*** Click Facebook icon");
         switchToWindowWithTitle("Onliner - Home | Facebook");
     }
 }

@@ -21,10 +21,12 @@ public class SearchPopupTest extends TestUtilities {
     }
 
     @Test(priority = 2)
-    public void verifyPopupIsClosed() {
+    public void verifyPopupStatus() {
         SearchPopup searchPopup = new SearchPopup(driver, log);
         assertTrue(searchPopup.isPopUpClosed());
+        takeScreenshot("visiblePopup");
         searchPopup.closePopup();
+        takeScreenshot("invisiblePopup");
         assertFalse(searchPopup.isPopUpClosed());
     }
 }

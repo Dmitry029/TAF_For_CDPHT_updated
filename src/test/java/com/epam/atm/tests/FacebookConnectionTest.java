@@ -10,7 +10,9 @@ import static org.testng.Assert.assertEquals;
 
 public class FacebookConnectionTest extends TestUtilities {
 
-    @Test
+    @Test(description = "Check that after click on Facebook button at the bottom" +
+            " of the page the Facebook site opens")
+
     public void verifyUrlOfFacebookSite() {
         String expectedUrl = "https://www.facebook.com/onlinerby";
         new MainPage(driver, log)

@@ -18,21 +18,20 @@ public class AlertWithTip extends BasePage {
     WebElement specTitle;
 
 
-
     public AlertWithTip(WebDriver driver, Logger log) {
         super(driver, log);
     }
 
-    public String getTipTitle(String text){
+    public String getTipTitle(String text) {
         String locator = String.format("//td[contains(text(),'%s')]//p[@class='product-tip__term']", text);
         return driver.findElement(By.xpath(locator)).getText();
     }
 
-    public boolean isAlertWithTipDisplayed(){
+    public boolean isAlertWithTipDisplayed() {
         return tips.stream().anyMatch(WebElement::isDisplayed);
-      }
+    }
 
-    public AlertWithTip closeAlert(){
+    public AlertWithTip closeAlert() {
         specTitle.click();
         return this;
     }
