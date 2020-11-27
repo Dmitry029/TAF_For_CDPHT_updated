@@ -9,7 +9,7 @@ import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 /**
- *  Test 2 realisation.
+ *  Test 2 realisation
  */
 
 public class AlertTest extends TestUtilities {
