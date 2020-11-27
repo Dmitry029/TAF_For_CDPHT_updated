@@ -5,28 +5,28 @@
     <test name="SearchPopupTest-CH">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="com.epam.atm.tests.SearchPopupTest"/>
+            <class name="com.epam.testTaskForCdphp.tests.SearchPopupTest"/>
         </classes>
     </test>
 
     <test name="AlertTest-CH">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="com.epam.atm.tests.AlertTest"/>
+            <class name="com.epam.testTaskForCdphp.tests.AlertTest"/>
         </classes>
     </test>
 
     <test name="FacebookConnectionTest-CH">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="com.epam.atm.tests.FacebookConnectionTest"/>
+            <class name="com.epam.testTaskForCdphp.tests.FacebookConnectionTest"/>
         </classes>
     </test>
 
     <test name="SearchPopupTest-FF">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="com.epam.atm.tests.SearchPopupTest"/>
+            <class name="com.epam.testTaskForCdphp.tests.SearchPopupTest"/>
         </classes>
     </test>
 

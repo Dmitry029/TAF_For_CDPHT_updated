@@ -1,12 +1,16 @@
-package com.epam.atm.tests;
+package com.epam.testTaskForCdphp.tests;
 
-import com.epam.atm.base.BasePage;
-import com.epam.atm.pages.Footer;
-import com.epam.atm.pages.MainPage;
-import com.epam.atm.utils.TestUtilities;
+import com.epam.testTaskForCdphp.base.BasePage;
+import com.epam.testTaskForCdphp.pages.Footer;
+import com.epam.testTaskForCdphp.pages.MainPage;
+import com.epam.testTaskForCdphp.utils.TestUtilities;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+
+/**
+ *  Test 2 realisation.
+ */
 
 public class FacebookConnectionTest extends TestUtilities {
 

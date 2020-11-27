@@ -1,4 +1,4 @@
-package com.epam.atm.base;
+package com.epam.testTaskForCdphp.base;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -43,7 +43,7 @@ public class BasePage {
     }
 
     /**
-     * Switch to top
+     * Switch to top (default content)
      */
     protected void switchToTop() {
         driver.switchTo().defaultContent();
@@ -76,5 +76,4 @@ public class BasePage {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
-
 }

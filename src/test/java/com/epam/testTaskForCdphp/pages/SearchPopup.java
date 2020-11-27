@@ -1,6 +1,6 @@
-package com.epam.atm.pages;
+package com.epam.testTaskForCdphp.pages;
 
-import com.epam.atm.base.BasePage;
+import com.epam.testTaskForCdphp.base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

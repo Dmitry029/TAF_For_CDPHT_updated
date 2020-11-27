@@ -1,6 +1,6 @@
-package com.epam.atm.utils;
+package com.epam.testTaskForCdphp.utils;
 
-import com.epam.atm.base.BaseTest;
+import com.epam.testTaskForCdphp.base.BaseTest;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -30,7 +30,6 @@ public class TestUtilities extends BaseTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     /**

@@ -1,12 +1,16 @@
-package com.epam.atm.tests;
+package com.epam.testTaskForCdphp.tests;
 
-import com.epam.atm.pages.MainPage;
-import com.epam.atm.pages.SearchPopup;
-import com.epam.atm.utils.TestUtilities;
+import com.epam.testTaskForCdphp.pages.MainPage;
+import com.epam.testTaskForCdphp.pages.SearchPopup;
+import com.epam.testTaskForCdphp.utils.TestUtilities;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
+
+/**
+ *  Test 1 realisation.
+ */
 
 public class SearchPopupTest extends TestUtilities {
 

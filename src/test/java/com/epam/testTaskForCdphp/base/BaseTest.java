@@ -1,4 +1,4 @@
-package com.epam.atm.base;
+package com.epam.testTaskForCdphp.base;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.apache.logging.log4j.LogManager.getLogger;
 
-@Listeners({com.epam.atm.base.TestListener.class})
+@Listeners({com.epam.testTaskForCdphp.base.TestListener.class})
 public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
@@ -32,9 +32,10 @@ public class BaseTest {
         log = getLogger(testName);
 
         BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-        driver = factory.getDriver();
+        //driver = factory.getDriver();
+        driver = factory.createDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         this.testSuiteName = ctx.getSuite().getName();
         this.testName = testName;

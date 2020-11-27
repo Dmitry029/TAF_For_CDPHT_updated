@@ -1,4 +1,4 @@
-package com.epam.atm.base;
+package com.epam.testTaskForCdphp.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.Logger;
@@ -38,8 +38,7 @@ public class BrowserDriverFactory {
                 WebDriverManager.firefoxdriver().setup();
                 driver.set(new FirefoxDriver());
                 break;
-         }
+        }
         return driver.get();
     }
-
 }

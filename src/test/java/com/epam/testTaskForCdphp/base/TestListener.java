@@ -1,4 +1,4 @@
-package com.epam.atm.base;
+package com.epam.testTaskForCdphp.base;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,5 +51,4 @@ public class TestListener implements ITestListener {
     public void onFinish(ITestContext context) {
         log.info("[ALL " + testName + " FINISHED]");
     }
-
 }
