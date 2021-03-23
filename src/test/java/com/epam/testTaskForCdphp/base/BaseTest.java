@@ -12,6 +12,7 @@ import org.testng.annotations.Parameters;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
+import static com.epam.testTaskForCdphp.base.BrowserDriverFactory.getDriver;
 import static org.apache.logging.log4j.LogManager.getLogger;
 
 @Listeners({com.epam.testTaskForCdphp.base.TestListener.class})
@@ -25,15 +26,19 @@ public class BaseTest {
 
     @Parameters({"browser"})
     @BeforeTest(alwaysRun = true)
-    public void setUp(Method method, @Optional("chrome") String browser,
+    public void setUp(Method method, @Optional("firefox") String browser, //"chrome"
             ITestContext ctx) {
 
         String testName = ctx.getCurrentXmlTest().getName();
         log = getLogger(testName);
 
-        BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-        //driver = factory.getDriver();
-        driver = factory.createDriver();
+        driver = getDriver(browser);
+        /* For BrowserDriwerFactoryOld
+        *
+        * new BrowserDriverFactory(browser,log);
+        * BrowserDriverFactoryOld factory = new BrowserDriverFactoryOld(browser, log);
+        * driver = factory.createDriver();
+        * */
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
