@@ -14,7 +14,6 @@ public class MainPageS extends BasePageS {
         super(log);
     }
 
-
     public MainPageS openPage() {
         log.info("*** Open page: " + pageUrl);
         open(pageUrl);

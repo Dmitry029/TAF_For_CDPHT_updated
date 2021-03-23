@@ -17,7 +17,6 @@ public class AlertWithTip extends BasePage {
     @FindBy(css = ".product-specs__title")
     WebElement specTitle;
 
-
     public AlertWithTip(WebDriver driver, Logger log) {
         super(driver, log);
     }

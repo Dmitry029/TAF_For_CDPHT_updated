@@ -22,7 +22,6 @@ public class SearchPopup extends BasePage {
     @FindBy(css = "#search-page")
     List<WebElement> searchPage;
 
-
     public SearchPopup(WebDriver driver, Logger log) {
         super(driver, log);
     }

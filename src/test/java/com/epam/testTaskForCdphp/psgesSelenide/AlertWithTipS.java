@@ -1,13 +1,8 @@
 package com.epam.testTaskForCdphp.psgesSelenide;
 
-import com.epam.testTaskForCdphp.base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import java.util.List;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;

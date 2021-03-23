@@ -11,7 +11,6 @@ public class Footer extends BasePage {
     @FindBy(css = "[class*=button_fb]")
     WebElement facebookLink;
 
-
     public Footer(WebDriver driver, Logger log) {
         super(driver, log);
     }

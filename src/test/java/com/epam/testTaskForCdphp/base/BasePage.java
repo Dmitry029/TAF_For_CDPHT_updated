@@ -34,7 +34,6 @@ public class BasePage {
         return driver.getTitle();
     }
 
-
     /**
      * Switch to iFrame using it's locator
      */
@@ -49,10 +48,8 @@ public class BasePage {
         driver.switchTo().defaultContent();
     }
 
-
     public void switchToWindowWithTitle(String expectedTitle) {
         String firstWindow = driver.getWindowHandle();
-
         Set<String> allWindows = driver.getWindowHandles();
         Iterator<String> windowsIterator = allWindows.iterator();
 
@@ -66,7 +63,6 @@ public class BasePage {
             }
         }
     }
-
 
     /**
      * Perform scroll to the bottom

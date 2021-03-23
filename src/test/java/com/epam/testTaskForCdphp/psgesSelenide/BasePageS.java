@@ -18,7 +18,6 @@ public class BasePageS {
         this.log = log;
     }
 
-
     /**
      * Switch to iFrame using it's locator
      */
@@ -33,10 +32,8 @@ public class BasePageS {
         getWebDriver().switchTo().defaultContent();
     }
 
-
     public void switchToWindowWithTitle(String expectedTitle) {
         WebDriver driver = getWebDriver();
-
         String firstWindow = driver.getWindowHandle();
 
         Set<String> allWindows = driver.getWindowHandles();
@@ -52,7 +49,6 @@ public class BasePageS {
             }
         }
     }
-
 
     /**
      * Perform scroll to the bottom

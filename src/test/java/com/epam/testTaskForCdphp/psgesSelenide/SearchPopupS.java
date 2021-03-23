@@ -17,7 +17,6 @@ public class SearchPopupS extends BasePageS {
     private String searchResults = "a.product__title-link";
     private String searchPage = "#search-page";
 
-
     public SearchPopupS(Logger log) {
         super(log);
     }
@@ -37,7 +36,6 @@ public class SearchPopupS extends BasePageS {
     }
 
     public boolean isPopUpClosed() {
-
         return $$(searchPage).size() > 0 && $(searchPage, 0).isDisplayed();
     }
 

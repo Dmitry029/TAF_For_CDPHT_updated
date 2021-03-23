@@ -19,10 +19,8 @@ import static org.apache.logging.log4j.LogManager.getLogger;
 public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
-
     protected String testSuiteName;
     protected String testName;
-
 
     @Parameters({"browser"})
     @BeforeTest(alwaysRun = true)
@@ -31,7 +29,6 @@ public class BaseTest {
 
         String testName = ctx.getCurrentXmlTest().getName();
         log = getLogger(testName);
-
         driver = getDriver(browser);
         /* For BrowserDriwerFactoryOld
         *

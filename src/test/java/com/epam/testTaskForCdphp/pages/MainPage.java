@@ -13,7 +13,6 @@ public class MainPage extends BasePage {
     @FindBy(css = ".fast-search__input")
     WebElement searchArea;
 
-
     public MainPage(WebDriver driver, Logger log) {
         super(driver, log);
     }
